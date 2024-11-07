@@ -1,0 +1,24 @@
+<% include("../layouts/header.ejs") %>
+
+<h2>Welcome, <%= admin.name %></h2>
+<br>
+<a href="/admin/dashboard">Dashboard</a>
+<br><br>
+
+    <table width="50%;">
+        <tr>
+            <td><img src="/userImages/<%= admin.image %>" width="150px" height="150px"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><%= admin.email %></td>
+        </tr>
+        <tr>
+            <td>Mobile</td>
+            <td><%= admin.mobile %></td>
+        </tr>
+    </table>
+<br>
+<a href="/admin/logout">Logout</a>
+
+<% include("../layouts/footer.ejs") %>
